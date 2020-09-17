@@ -1,18 +1,8 @@
-
-# ask the user for two numbers
-# ask the user for an operation to perform
-# perform the operation on the two numbers
-# output the result
-
-# answer = Kernel.gets()
-# Kernel.puts(answer)
-
-
 def prompt(message)
-  Kernel.puts("=> #{message}")  #creating a prompt method that can be replicated in every message to the user 
+  Kernel.puts("=> #{message}") #creating a prompt method that can be replicated in every message to the user 
 end 
 
-def valid_number(num)   #performing a validation on number
+def valid_number(num) #performing a validation on number
   num.to_i != 0
 end 
 
@@ -30,7 +20,6 @@ def operation_to_message(op)
 end 
 
 prompt("Bienvenidos to Wes's calulator, what is your name?")
-
 
 name = '' #creating the local variable name outside the loop so it can be used elsewhere in our code
 loop do 
@@ -88,20 +77,20 @@ loop do # main game loop
     break
   else
     prompt("Try again, please enter 1, 2, 3 or 4.")
-    end 
+  end 
   end 
 
   prompt("#{operation_to_message(operation)} the two numbers.....")
 
   result = case operation
            when '1'
-            num_1.to_i() + num_2.to_i()
+             num_1.to_i() + num_2.to_i()
            when '2'
-            num_1.to_i() - num_2.to_i()
+             num_1.to_i() - num_2.to_i()
            when '3'
-            num_1.to_i() * num_2.to_i()
+             num_1.to_i() * num_2.to_i()
            when '4'
-            num_1.to_f() / num_2.to_f()
+             num_1.to_f() / num_2.to_f()
   end 
 
     prompt("Your answer is #{result}!")
@@ -112,9 +101,3 @@ loop do # main game loop
 end 
 
 prompt("Thanks for using my calculator #{name}!")
-
-
-
-
-
-
