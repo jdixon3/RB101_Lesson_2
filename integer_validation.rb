@@ -23,35 +23,49 @@
 # prompt("Number #{num} is a sick one for sure!")
 
 
+# def integer(input)
+#   input.to_i.to_s == input
+# end 
 
+# def float(input)
+#   input.to_f.to_s == input
+# end 
 
+# def number(input)
+#   float(input) || integer(input)
+# end 
 
-def integer(input)
-  input.to_i.to_s == input
-end 
+# puts 'please enter a number.'
 
-def float(input)
-  input.to_f.to_s == input
-end 
+# num = ''
+# loop do 
+#   num = gets.chomp
 
-def number(input)
-  float(input) || integer(input)
-end 
+#   if number(num)
+#     break
+#   else 
+#     puts 'Invalid number please enter another.'
+#   end 
+# end 
 
-puts 'please enter a number.'
+# puts "#{num} is a good pick!"
 
-num = ''
-loop do 
-  num = gets.chomp
+def operation_to_message(operation)
+  word = case operation
+           when '1'
+             'Adding'
+           when '2'
+             'Subtracting'
+           when '3'
+             'Multiplying'
+           when '4'
+             'Dividing'
+         end
 
-  if number(num)
-    break
-  else 
-    puts 'Invalid number please enter another.'
-  end 
-end 
+  x = "A random line of code"
 
-puts "#{num} is a good pick!"
+  word
+end
 
 
 
