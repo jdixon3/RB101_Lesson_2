@@ -46,7 +46,7 @@ loop do #main game loop
       prompt("Hmmmm....please enter a valid number greater than 0.")
     else 
       break
-    end n
+    end 
   end 
 
 
